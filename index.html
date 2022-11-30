@@ -20,9 +20,9 @@
                 <div class="container">
                     <div class="navbar-brand">
                         <!-- Logo placeholder-->
-                        <a class="navbar-item" href="https://bulma.io">
+                        <a class="navbar-item" href="https://bulma.io/documentation/">
                             <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
-                          </a>
+                        </a>
                         <span class="navbar-burger" data-target="navbarMenuHeroA">
                             <span></span>
                             <span></span>
@@ -36,25 +36,25 @@
                             </a>
                             <div class="navbar-item has-dropdown is-hoverable">
                                 <a class="navbar-link">
-                                  Documentation
+                                    Documentation
                                 </a>
-                        
+
                                 <div class="navbar-dropdown">
-                                  <a class="navbar-item">
-                                    Page 1
-                                  </a>
-                                  <a class="navbar-item">
-                                    Page 2
-                                  </a>
-                                  <a class="navbar-item">
-                                    Page 3
-                                  </a>
-                                  <hr class="navbar-divider">
-                                  <a class="navbar-item">
-                                    Page 4
-                                  </a>
+                                    <a class="navbar-item">
+                                        Page 1
+                                    </a>
+                                    <a class="navbar-item">
+                                        Page 2
+                                    </a>
+                                    <a class="navbar-item">
+                                        Page 3
+                                    </a>
+                                    <hr class="navbar-divider">
+                                    <a class="navbar-item">
+                                        Page 4
+                                    </a>
                                 </div>
-                              </div>
+                            </div>
                             <span class="navbar-item">
                                 <!-- Set as primary so we can customise the colour scheme later with sass -->
                                 <a class="button is-primary">
@@ -77,8 +77,8 @@
                         </p>
                         <p class="subtitle">
                             <!-- This is placeholder text, use this to generate more: https://www.lipsum.com/ -->
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Vestibulum dignissim risus vitae lectus placerat, ut aliquet quam vulputate. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Vestibulum dignissim risus vitae lectus placerat, ut aliquet quam vulputate.
                             Sed sit amet tincidunt nibh. Aliquam sed neque et ante elementum laoreet at vitae lacus.
                             Pellentesque eget odio risus.
                         </p>
@@ -106,3 +106,27 @@
         </div>
     </section>
 </body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+
+                // Get the target from the "data-target" attribute
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
+
+    });
+</script>
