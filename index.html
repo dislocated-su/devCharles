@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <!-- Manages the styles etc for the design e.g. don't touch unless you know what you're doing!-->
@@ -9,6 +9,7 @@
                          initial-scale=1">
     <title>GFG Bulma starter template</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -35,8 +36,8 @@
                             </a>
                             <div class="navbar-item has-dropdown is-hoverable">
                                 <a class="navbar-link">
-                                Documentation
-                            </a>
+                                  Documentation
+                                </a>
                         
                                 <div class="navbar-dropdown">
                                   <a class="navbar-item">
@@ -64,31 +65,29 @@
                     </div>
                 </div>
             </nav>
-            <p class="title is-1 has-text-centered">
-                <strong>Devcharles</strong>
-            </p>
         </div>
 
         <!-- Hero content: will be in the middle -->
         <div class="hero-body">
-
+            <div class="container is-widescreen">
                 <div class="columns">
                     <div class="column is-three-fifths">
-                    <div class="container has-text">
-                        <p class="subtitle">
-                            Background colour will be changed
-                            I've set up a basic template and shown how elements can be coded :)
+                        <p id="main-title" class="title">
+                            <strong>Piazza Panic</strong>
                         </p>
-                        <div class="block is-white">
-                            This text is within a <strong>block</strong>. <br>
-                            We will be using this <strong>a lot</strong>.
-                        </div>
-                    </div>
+                        <p class="subtitle">
+                            <!-- This is placeholder text, use this to generate more: https://www.lipsum.com/ -->
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                            Vestibulum dignissim risus vitae lectus placerat, ut aliquet quam vulputate. 
+                            Sed sit amet tincidunt nibh. Aliquam sed neque et ante elementum laoreet at vitae lacus.
+                            Pellentesque eget odio risus.
+                        </p>
                     </div>
                     <div class="column">
-                    <figure class="image is-256x256">
-                        <img src="https://bulma.io/images/placeholders/128x128.png">
+                        <figure class="image is-5by3">
+                            <img src="https://bulma.io/images/placeholders/800x480.png">
                         </figure>
+                    </div>
                 </div>
             </div>
         </div>
@@ -106,6 +105,4 @@
             </nav>
         </div>
     </section>
-
-
 </body>
