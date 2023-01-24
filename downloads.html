@@ -10,13 +10,43 @@
     <title>GFG Bulma starter template</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+    <section class="section">
 
 <body>
-
-    <section class="section">
+ <section class="hero is-fullheight">
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <!-- Logo placeholder-->
+                        <a class="navbar-item" href="/">
+                            devCharles
+                        </a>
+                        <span class="navbar-burger" data-target="navbarMenuHeroA">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenuHeroA" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a class="navbar-item" href="/">
+                                Home
+                            </a>
+                            <span class="navbar-item">
+                                <!-- Set as primary so we can customise the colour scheme later with sass -->
+                                <a class="button is-primary" href="/downloads.html">
+                                    <span>Downloads</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         <h1 class="title">Downlaods</h1>
         <h2 class="subtitle">
-            <div class="content">
+            <div class="content" >
                 <!-- Download pdfs -->
                 <ol type="1">
                     <li><a href="/assets/ENG.pdf" >Risk Assessment</a></li>
@@ -36,8 +66,8 @@
                 <nav class="tabs">
                     <div class="container">
                         <ul>
-                            <li><a>Our Team</a></li>
-                            <li><a>Try out the game!</a></li>
+                            <li><a href="our-team.html">Our Team</a></li>
+                            <li><a href="try-out-the-game">Try out the game!</a></li>
                             <li><a>Components, Engines and other OpenSource code used in the game</a></li>
                         </ul>
                     </div>
