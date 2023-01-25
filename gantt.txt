@@ -1,0 +1,45 @@
+## PASTE THE CODE BELOW IN //www.plantuml.com/plantuml/png/ ##
+
+@startgantt
+
+Project starts 2022-11-15
+[Client Meeting Prep] starts 2022-11-15
+[Client Meeting Prep] ends 2022-11-21
+
+[Client Meeting] starts at [Client Meeting Prep]'s end
+[Client Meeting] ends 2022-11-22
+
+[Website Development] starts at [Client Meeting Prep]'s end
+[Website Development] ends at 2023-01-25
+
+[Requirements] starts at 2023-01-04
+[Requirements] ends at 2023-01-25
+
+[Risk Assessment] starts at [Client Meeting]'s end
+[Method Selection and Planning] starts at [Client Meeting]'s end
+[Risk Assessment] ends at 2022-12-03
+[Method Selection and Planning] ends at 2022-12-03
+
+[Implementation] Starts at [Method Selection and Planning]'s end
+[Implementation] ends at 2023-01-31
+
+2022-12-23 to 2022-12-28 is closed
+2023-01-08 to 2023-01-15 is closed
+
+[Client Meeting Prep] is 86% complete
+[Client Meeting] is 0% complete
+[Website Development] is 0% complete
+[Requirements] is 0% complete
+[Risk Assessment] is 0% complete
+[Method Selection and Planning] is 0% complete
+[Implementation] is 0% complete
+
+[Client Meeting Prep] is colored in Turquoise
+[Client Meeting] is colored in Turquoise
+[Website Development] is colored in Turquoise
+[Requirements] is colored in Turquoise
+[Risk Assessment] is colored in Turquoise
+[Method Selection and Planning] is colored in Turquoise
+[Implementation] is colored in Turquoise
+
+@endgantt

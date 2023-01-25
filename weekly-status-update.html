@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Manages the styles etc for the design e.g. don't touch unless you know what you're doing!-->
+    <title>devCharles</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, 
+                         initial-scale=1">
+    <title>devCharles</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <section class="hero is-fullheight">
+        <!-- Hero head: will stick at the top -->
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <!-- Logo placeholder-->
+                        <a class="navbar-item" href="/">
+                            devCharles
+                        </a>
+                        <span class="navbar-burger" data-target="navbarMenuHeroA">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenuHeroA" class="navbar-menu">
+                        <div class="navbar-end">
+                            <a class="navbar-item" href="/">
+                                Home
+                            </a>
+                            <span class="navbar-item">
+                                <!-- Set as primary so we can customise the colour scheme later with sass -->
+                                <a class="button is-primary" href="/downloads.html">
+                                    <span>Downloads</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div> 
+        <div class="status-update">
+            <p>
+                <span class="weeksNotes">
+                     Week 1 - </span> Notes Placeholder
+            </p>
+            <figure style="margin-bottom: 100px">
+                <img src="assets/week1.png">
+            </figure>
+
+            <p> 
+                <span class="weeksNotes"> 
+                    Week 2 - </span> Notes Placeholder
+            </p>
+            <figure style="margin-bottom: 100px;">
+                <img src="assets/week2.png">
+            </figure>
+
+            <p> 
+                <span class="weeksNotes"> 
+                    Week 3 - </span> Notes Placeholder
+            </p>
+            <figure style="margin-bottom: 100px;">
+                <img src="assets/week3.png">
+            </figure>
+
+            <p> 
+                <span class="weeksNotes"> 
+                    Week 4 - </span> Notes Placeholder
+            </p>
+            <figure style="margin-bottom: 100px;">
+                <img src="assets/week4.png">
+            </figure>
+
+            <p> 
+                <span class="weeksNotes"> 
+                    Week 5 - </span> Notes Placeholder
+            </p>
+            <figure style="margin-bottom: 100px;">
+                <img src="assets/week5.png">
+            </figure>
+
+            <p> 
+                <span class="weeksNotes"> 
+                    Week 6 - </span> Notes Placeholder
+            </p>
+            <figure style="margin-bottom: 100px;">
+                <img src="assets/week6.png">
+            </figure>
+
+            <p> 
+                <span class="weeksNotes"> 
+                    Week 7 - </span> Notes Placeholder
+            </p>
+            <figure style="margin-bottom: 100px;">
+                <img src="assets/week7.png">
+            </figure>
+
+            <p> 
+                <span class="weeksNotes"> 
+                    Week 8 - </span> Notes Placeholder
+            </p>
+            <figure style="margin-bottom: 100px;">
+                <img src="assets/week8.png">
+            </figure>
+
+            <p> 
+                <span class="weeksNotes">
+                    Week 9 - </span> EXAM WEEK!
+            </p>
+
+            <p style="margin-top: 100px;"> 
+                <span class="weeksNotes"> 
+                    Week 10 - </span> Notes Placeholder
+            </p>
+            <figure style="margin-bottom: 100px;">
+                <img src="assets/week10.png">
+            </figure>
+
+            <p style="margin-top: 100px;"> 
+                <span class="weeksNotes"> 
+                    Week 11 - </span> Notes Placeholder
+            </p>
+            <figure style="margin-bottom: 100px;">
+                <img src="assets/week11.png">
+            </figure>
+
+            <p style="margin-top: 100px;"> 
+                <span class="weeksNotes"> 
+                    Week 12 - </span> Notes Placeholder
+            </p>
+            <figure style="margin-bottom: 100px;">
+                <img src="assets/week12.png">
+            </figure>
+
+        </div>
+
+        <style>
+            .status-update{
+                margin-left: 100px;
+                margin-top: 50px;
+            }
+            .weeksNotes{
+                font-weight: bold;
+                font-size: 20px;
+            }
+        </style>
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+
+                // Get the target from the "data-target" attribute
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
+
+    });
+</script>
