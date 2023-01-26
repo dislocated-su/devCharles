@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 
-<body>
+<body style="background-color: black;">
  <section class="hero is-fullheight">
         <!-- Hero head: will stick at the top -->
         <div class="hero-head">
@@ -20,7 +20,7 @@
                 <div class="container">
                     <div class="navbar-brand">
                         <!-- Logo placeholder-->
-                        <a class="navbar-item" href="/">
+                        <a class="navbar-item" style="color:aliceblue;" href="/">
                             devCharles
                         </a>
                         <span class="navbar-burger" data-target="navbarMenuHeroA">
@@ -31,7 +31,7 @@
                     </div>
                     <div id="navbarMenuHeroA" class="navbar-menu">
                         <div class="navbar-end">
-                            <a class="navbar-item" href="/">
+                            <a class="navbar-item" style="background-color: black; color: aliceblue;" href="/">
                                 Home
                             </a>
                             <span class="navbar-item">
@@ -57,13 +57,27 @@
 
                   </ol>
               </div>
+   
         </h2>
+        <div class="hero-foot">
+            <nav class="tabs">
+                <div class="container">
+                    <ul>
+                      <li><a href="/our-team.html" style="color: aliceblue;">Our Team</a></li>
+                      <li><a href="/try-out-the-game.html" style="color: aliceblue;">Try out the game!</a></li>
+                      <li><a href="/weekly-status-update.html" style="color: aliceblue;">Weekly Status Update</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+</section>
         <style>
             .title{
                 font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                 margin-left: 119px;
                 margin-top: 40px;
                 font-weight: bold;
+                color: aliceblue;
             }
             .content{
                 margin-left: 100px;
@@ -76,3 +90,27 @@
             }
         </style>
 </body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+            el.addEventListener('click', () => {
+
+                // Get the target from the "data-target" attribute
+                const target = el.dataset.target;
+                const $target = document.getElementById(target);
+
+                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                el.classList.toggle('is-active');
+                $target.classList.toggle('is-active');
+
+            });
+        });
+
+    });
+</script>
