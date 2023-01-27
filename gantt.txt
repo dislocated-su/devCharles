@@ -12,8 +12,8 @@ Project starts 2022-11-15
 [Website Development] starts at [Client Meeting Prep]'s end
 [Website Development] ends at 2023-01-25
 
-[Requirements] starts at 2023-01-04
-[Requirements] ends at 2023-01-25
+[Requirements] starts at [Client Meeting]'s end
+[Requirements] ends at 2022-12-04
 
 [Risk Assessment] starts at [Client Meeting]'s end
 [Method Selection and Planning] starts at [Client Meeting]'s end
@@ -26,13 +26,13 @@ Project starts 2022-11-15
 2022-12-23 to 2022-12-28 is closed
 2023-01-08 to 2023-01-15 is closed
 
-[Client Meeting Prep] is 86% complete
-[Client Meeting] is 0% complete
-[Website Development] is 0% complete
-[Requirements] is 0% complete
-[Risk Assessment] is 0% complete
-[Method Selection and Planning] is 0% complete
-[Implementation] is 0% complete
+[Client Meeting Prep] is 100% complete
+[Client Meeting] is 100% complete
+[Website Development] is 100% complete
+[Requirements] is 100% complete
+[Risk Assessment] is 100% complete
+[Method Selection and Planning] is 100% complete
+[Implementation] is 100% complete
 
 [Client Meeting Prep] is colored in Turquoise
 [Client Meeting] is colored in Turquoise
