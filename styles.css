@@ -5,3 +5,9 @@
 body {
     font-family: Inter, sans-serif;
 }
+
+.navbar-item .logo {
+    width: auto;
+    height: 60px;
+    max-height: 5rem;
+}

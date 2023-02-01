@@ -3,26 +3,112 @@
 
 <head>
     <!-- Manages the styles etc for the design e.g. don't touch unless you know what you're doing!-->
-    <title>Bulma Starter Template</title>
+    <title>devCharles</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, 
                          initial-scale=1">
-    <title>GFG Bulma starter template</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-            <!-- Hero footer: will stick at the bottom -->
-            <div class="hero-foot">
-                <nav class="tabs">
-                    <div class="container">
-                        <ul>
-                            <li><a>Our Team</a></li>
-                            <li><a>Try out the game!</a></li>
-                            <li><a>Components, Engines and other OpenSource code used in the game</a></li>
-                        </ul>
-                    </div>
-                </nav>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <!-- Logo placeholder-->
+                <a class="navbar-item" href="index.html">
+                    <img class="logo" src="images/logo-light.png" alt="logo">
+                </a>
+                <span class="navbar-burger" data-target="navbarMenuHeroA">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
             </div>
-        </section>
+            <div id="navbarMenuHeroA" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item">
+                        Home
+                    </a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a href="document.html" class="navbar-link">
+                            Documentation
+                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a href="document.html" class="navbar-item">
+                                Extra diagrams
+                            </a>
+                            <a href="docs/Requirements_Doc_NEW.pdf" class="navbar-item">
+                                Requirements
+                            </a>
+                            <a href="docs/Architecture.pdf" class="navbar-item">
+                                Architecture
+                            </a>
+                            <a href="docs/Method_selection_and_planning.pdf" class="navbar-item">
+                                Method Selection and Planning
+                            </a>
+                            <a href="docs/Risk_assessment_and_mitigation.pdf" class="navbar-item">
+                                Risk Assesment and Mitigation
+                            </a>
+                            <a href="docs/Implementation.pdf" class="navbar-item">
+                                Implementation
+                            </a>
+                            <a href="javadoc/index.html" class="navbar-item">
+                                Javadoc
+                            </a>
+                        </div>
+                    </div>
+                    <span class="navbar-item">
+                        <!-- Set as primary so we can customise the colour scheme later with sass -->
+                        <a href="piazzaPanic.jar" class="button is-link">
+                            <span>Downloads</span>
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="section"></section>
+    <section class="section">
+        <div class="container content">
+            <h1>Libraries</h1>
+            <p>
+                Libraries used:
+            <ul>
+                <b>
+                    <li>Libgdx</li>
+                    <li>Box2D</li>
+                    <li>Ashley</li>
+                    <li>gdx-ai</li>
+                    <li>box2dLights</li>
+                </b>
+            </ul>
+            libGDX was made by Mario Zechner under the Apache License 2.0
+            <br>
+            libGDX ashley was made by Stefan Bachmann under the Apache License 2.0
+            <br>
+            box2dlights was made by Kalle Hameleinen under the Apache License 2.0
+            <br>
+            libGDX ai was made by <a href="https://github.com/davebaol">davebaol</a> under the Apache License 2.0
+            </p>
+            <h1>Assets</h1>
+            <p>
+                Assets used:
+                <ul>
+                    <li><a href="https://ember-orchid9.itch.io/buff-chef-basics">Buff chef Basics</a></li>
+                    <li><a href="https://github.com/czyzby/gdx-skins/tree/master/craftacular">Craftacular scene2d skin</a></li>
+                </ul>
+                Craftacular scene2d skin was made by Grand Chaos Productions and licenced under CC BY 4.0.
+                <br>
+                Buff chef basics was made by Vee Neil and licenced under CC BY 4.0.
+            </p>
+            <h1>Tools</h1>
+            <p>
+                <ul>
+                    <li><a href="https://plugins.jetbrains.com/plugin/8286-sequencediagram">SequenceDiagram</a></li>
+                </ul>
+                SequenceDiagram was made by vanco under the Apache License 2.0
+            </p>
+        </div>
+    </section>
 </body>
